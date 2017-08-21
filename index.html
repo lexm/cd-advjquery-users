@@ -5,7 +5,19 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>User Table</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script></script>
+  <script>
+    $(document).ready(function() {
+      $('form').submit(function(event) {
+        event.preventDefault();
+        var newRow = "<tr><td>"
+        newRow += $("input[name='first_name']").val() + "</td><td>";
+        newRow += $("input[name='last_name']").val() + "</td><td>";
+        newRow += $("input[name='email']").val() + "</td><td>";
+        newRow += $("input[name='phonenum']").val() + "</td></tr>";
+        $("table").append(newRow);
+      })
+    })
+  </script>
 </head>
 <body>
   <table>
