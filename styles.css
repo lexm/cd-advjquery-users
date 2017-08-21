@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*outline: 1px dotted red;*/
+}
+body{
+  width: 950px;
+}
+table{
+  width: 600px;
+  margin: 20px;
+  border: 2px solid black;
+}
+tr{
+}
+th, td{
+  border: 1px dotted black;
+}
+form{
+  margin: 20px;
+}
+label{
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+  margin: 10px;
+}
+input{
+  width: 300px;
+  margin: 10px;
+}
